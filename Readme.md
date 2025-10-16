@@ -19,6 +19,7 @@ pite/
 │   ├── conftest.py  # Test configuration
 │   ├── test_core.py # Tests for core.py
 │   └── test_cli.py  # Tests for cli.py
+│── LICENSE
 └── README.md
 ```
 
