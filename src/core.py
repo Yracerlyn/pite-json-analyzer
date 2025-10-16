@@ -45,7 +45,7 @@ def filter_records(records: list[Record], threshold: int, include_all: bool) -> 
     Filters and cleans records based on status and value threshold.
 
     Filters are:
-    1. Status is "ok" (or starts with 'o'), unless 'include_all' is True.
+    1. Status is "ok", unless 'include_all' is True.
     2. Value is successfully converted to float.
     3. Value is greater than or equal to the 'threshold'.
     """
@@ -60,7 +60,7 @@ def filter_records(records: list[Record], threshold: int, include_all: bool) -> 
             continue
         
         # 1. Check status (if not including all)
-        is_ok = status.startswith("o")
+        is_ok = (status == "ok")
         if not (is_ok or include_all):
             continue
 

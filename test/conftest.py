@@ -1,12 +1,12 @@
 """
-Configuration simple pour les tests pytest.
+Test configuration.
 """
 import pytest
 
 
 @pytest.fixture
 def simple_records():
-    """Quelques enregistrements simples pour tester."""
+    """Sample records for testing."""
     return [
         {"status": "ok", "value": 10},
         {"status": "bad", "value": 20},

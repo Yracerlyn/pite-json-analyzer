@@ -1,5 +1,5 @@
 """
-Tests simples pour cli.py
+Tests for cli.py
 """
 import sys
 sys.path.append('src')
@@ -7,7 +7,7 @@ from cli import setup_config, main
 
 
 def test_setup_config_default():
-    """Test que setup_config retourne une configuration par défaut."""
+    """Test that setup_config returns a default configuration."""
     config = setup_config([])
     assert "path" in config
     assert "encoding" in config
@@ -16,22 +16,22 @@ def test_setup_config_default():
 
 
 def test_setup_config_with_file():
-    """Test que setup_config accepte l'argument --file."""
-    config = setup_config(["--file", "mon_fichier.json"])
+    """Test that setup_config accepts the --file argument."""
+    config = setup_config(["--file", "file.json"])
     
-    assert config["path"] == "mon_fichier.json"
+    assert config["path"] == "file.json"
 
 
 def test_setup_config_with_all():
-    """Test que setup_config accepte l'argument --all."""
+    """Test that setup_config accepts the --all argument."""
     config = setup_config(["--all"])
     
     assert config["mode"] == "ALL"
 
 
 def test_main_runs_without_error(capsys):
-    """Test que main() s'exécute sans erreur même si le fichier n'existe pas."""
-    main(["--file", "fichier_inexistant.json"])   
+    """Test that main() runs without error even if the file doesn't exist."""
+    main(["--file", "file.json"])   
     captured = capsys.readouterr() 
    
     assert "Total raw records" in captured.out
