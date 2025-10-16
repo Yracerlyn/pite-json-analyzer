@@ -1,0 +1,26 @@
+[{
+        "status": "ok",
+        "value": 15,
+        "name": "Record 1"
+    },
+    {
+        "status": "ok",
+        "value": "25.5",
+        "name": "Record 2"
+    },
+    {
+        "status": "bad",
+        "value": 10,
+        "name": "Record 3"
+    },
+    {
+        "status": "ok",
+        "value": "invalid_number",
+        "name": "Record 4"
+    },
+    {
+        "status": "OK",
+        "value": 30,
+        "name": "Record 5"
+    }
+]

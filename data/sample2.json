@@ -1,0 +1,11 @@
+[{
+        "status": "ok",
+        "value": 15,
+        "name": "Record 1"
+    },
+    {
+        "status": "ok",
+        "value": "25.5",
+        "name": "Record 2"
+    }
+]
