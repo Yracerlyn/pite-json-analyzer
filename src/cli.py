@@ -45,11 +45,6 @@ def setup_config(argv: list[str] | None = None) -> dict:
         "threshold": args.thres,
         "mode": "ALL" if args.all else "OK",
     }
-    
-    """ # Simulate the random environment feature for 'mode'
-    if random.random() < 0.1:
-        print("Random environment feature activated: Forcing 'ALL' mode.")
-        config["mode"] = "ALL" """
         
     return config
 
