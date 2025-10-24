@@ -106,3 +106,29 @@ The project includes 8 tests that verify:
 - Application execution
 
 All tests pass ✅
+
+## 🔄 Continuous Integration
+
+This project uses **GitHub Actions** for automated testing on every push and pull request.
+
+### CI Pipeline includes:
+- ✅ Automated testing on Python 3.10, 3.11, and 3.12
+- ✅ Test execution with pytest
+- ✅ CLI functionality verification
+
+### CI Status
+The CI badge will show the current build status once pushed to GitHub:
+
+```markdown
+![CI](https://github.com/Yracerlyn/pite-json-analyzer/workflows/CI/badge.svg)
+```
+
+### Triggering CI
+CI runs automatically on:
+- Push to `main` or `master` branch
+- Pull requests to `main` or `master` branch
+
+### View CI Results
+1. Go to your GitHub repository
+2. Click on the "Actions" tab
+3. View test results for each commit/PR
